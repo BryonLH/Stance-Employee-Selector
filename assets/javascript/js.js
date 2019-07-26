@@ -1,4 +1,4 @@
-var namesArray = ["filler", "Melanie", "Dean", "Daniel", "Stacy", "Amy", "Biggie", "Val"];
+var namesArray = ["Melanie", "Dean", "Daniel", "Stacy", "Amy", "Biggie", "Val"];
 var employeeNum = 0;
 var employeeIndex = 0;
 var employeesRemoved = [];
@@ -9,7 +9,7 @@ $("#start-button").on("click", function (e) {
     // e.preventDefault();
     console.log("clicked");
     while (employeesToRemove.length < 6) {
-        var num = Math.floor(Math.random() * 7) + 1;
+        var num = Math.floor(Math.random() * 7);
         if ($.inArray(num, employeesToRemove) == -1) {
             employeesToRemove.push(num);
             console.log(employeesToRemove);

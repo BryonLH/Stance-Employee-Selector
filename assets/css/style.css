@@ -19,3 +19,7 @@ body {
     padding:6px;
     font-size:30px;
 }
+
+.employee-display {
+    min-height:100px;
+}
